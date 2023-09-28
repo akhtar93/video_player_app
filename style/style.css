@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #54c3ef;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+}
+
+.main-heading {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 90px;
+  text-align: center;
+  color: #fad744;
+  text-shadow: 2px 5px #2b3252;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2% 16%;
+}
+
+.player-section {
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 16px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.player-wrapper {
+  width: 70%;
+  padding-right: 16px;
+  border-right: 1px solid #ccc;
+}
+
+.player-wrapper iframe {
+  width: 100%;
+  height: 480px;
+}
+
+.playlist-wrapper {
+  width: 30%;
+  margin-left: 16px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 700px;
+}
+
+.playlist-card {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.active {
+  border: 4px solid #fad744;
+}
+
+.thumbnail {
+  display: flex;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.video-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px;
+}
+
+#video-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#video-action p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 16px;
+}
+
+#video-action span {
+  margin-right: 5px;
+}
+
+#video-action i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 20px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#video-title {
+  font-size: 36px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+}
+
+#video-description {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+  max-height: 70px;
+  overflow-y: auto;
+}
